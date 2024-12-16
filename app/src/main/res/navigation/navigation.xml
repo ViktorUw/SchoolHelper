@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/allTasks">
+
+    <fragment
+        android:id="@+id/allTasks"
+        android:name="com.example.schoolhelper.AllTasks"
+        android:label="fragment_all_tasks"
+        tools:layout="@layout/fragment_all_tasks" >
+        <action
+            android:id="@+id/action_allTasks_to_listOfTask"
+            app:destination="@id/listOfTask"
+            >
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/grades"
+        android:name="com.example.schoolhelper.Grades"
+        android:label="fragment_grades"
+        tools:layout="@layout/fragment_grades" />
+    <fragment
+        android:id="@+id/listOfTask"
+        android:name="com.example.schoolhelper.ListOfTask"
+        android:label="ListOfTask"
+        >
+        <argument
+                android:name="exerciseListId"
+                app:argType="integer"
+
+            />
+        <argument
+            android:name="nbOfTask"
+            app:argType="integer"
+
+            />
+    </fragment>
+</navigation>

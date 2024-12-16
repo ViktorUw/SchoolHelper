@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercise">
+
+
+    <TextView
+        android:id="@+id/tv_name_of_subject_LOT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="Przedmiot"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_number_of_list_LOT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+
+        android:text="Lista "
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_of_task_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+
+        />
+</FrameLayout>

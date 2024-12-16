@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allTasks"
+        android:title="Listy Zadań"
+        android:icon="@drawable/task_list"
+        />
+    <item
+        android:id="@+id/grades"
+        android:title="Oceny"
+        android:icon="@drawable/grades"
+        />
+</menu>
